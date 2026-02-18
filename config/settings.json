@@ -1,0 +1,56 @@
+{
+  "name": "Proxy Aggregator Settings",
+  "version": "1.0.0",
+  
+  "testing": {
+    "enabled": true,
+    "timeout_seconds": 10,
+    "max_concurrent": 50,
+    "retry_count": 2,
+    
+    "china_test": {
+      "enabled": true,
+      "method": "api",
+      "comment": "使用公開 API 測試中國連通性",
+      "test_urls": [
+        "https://www.google.com",
+        "https://www.youtube.com"
+      ]
+    },
+    
+    "ip_purity": {
+      "enabled": true,
+      "block_datacenter": false,
+      "block_vpn_detected": true,
+      "min_trust_score": 30,
+      "blocked_asns": [],
+      "blocked_countries": []
+    }
+  },
+  
+  "output": {
+    "max_nodes": 200,
+    "sort_by": "speed",
+    "formats": ["singbox", "clash", "base64"],
+    
+    "singbox": {
+      "template": "config/singbox-template.json",
+      "outbound_tag_prefix": "proxy-"
+    },
+    
+    "clash": {
+      "template": "config/clash-template.yaml"
+    }
+  },
+  
+  "schedule": {
+    "aggregate_cron": "0 6 * * *",
+    "comment": "每天 UTC 6:00 (台灣 14:00) 執行"
+  },
+  
+  "github_pages": {
+    "enabled": true,
+    "branch": "gh-pages",
+    "base_url": ""
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Proxy Sources Configuration",
+  "description": "公開節點來源列表",
+  "sources": [
+    {
+      "name": "V2RayAggregator-Eternity",
+      "url": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
+      "type": "mixed",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "name": "V2RayAggregator-Airport",
+      "url": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/EternityAir.txt",
+      "type": "mixed",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "name": "freefq",
+      "url": "https://raw.githubusercontent.com/freefq/free/master/v2",
+      "type": "base64",
+      "enabled": true,
+      "priority": 3
+    },
+    {
+      "name": "Pawdroid",
+      "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+      "type": "base64",
+      "enabled": true,
+      "priority": 3
+    },
+    {
+      "name": "ermaozi-clash",
+      "url": "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
+      "type": "clash",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "name": "mfuu-v2ray",
+      "url": "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
+      "type": "base64",
+      "enabled": true,
+      "priority": 3
+    },
+    {
+      "name": "aiboboxx-v2rayfree",
+      "url": "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
+      "type": "base64",
+      "enabled": true,
+      "priority": 3
+    }
+  ],
+  "bpb_panel": {
+    "enabled": true,
+    "subscription_url": "",
+    "priority": 0,
+    "comment": "填入你的 BPB Panel 訂閱 URL（部署後獲得）"
+  }
+}

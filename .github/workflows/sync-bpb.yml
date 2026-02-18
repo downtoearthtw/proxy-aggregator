@@ -1,0 +1,59 @@
+# 自動同步 BPB Panel 上游更新
+name: Sync BPB Panel
+
+on:
+  schedule:
+    # 每天 UTC 0:00 檢查更新
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Check BPB Panel Latest Release
+        id: check
+        run: |
+          # 獲取 BPB Panel 最新版本
+          LATEST=$(curl -s https://api.github.com/repos/bia-pain-bache/BPB-Worker-Panel/releases/latest | jq -r '.tag_name')
+          echo "Latest BPB Panel version: $LATEST"
+          
+          # 讀取當前版本
+          CURRENT=$(cat .bpb-version 2>/dev/null || echo "none")
+          echo "Current version: $CURRENT"
+          
+          if [ "$LATEST" != "$CURRENT" ]; then
+            echo "update_needed=true" >> $GITHUB_OUTPUT
+            echo "new_version=$LATEST" >> $GITHUB_OUTPUT
+          else
+            echo "update_needed=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Update Version File
+        if: steps.check.outputs.update_needed == 'true'
+        run: |
+          echo "${{ steps.check.outputs.new_version }}" > .bpb-version
+          
+      - name: Commit Changes
+        if: steps.check.outputs.update_needed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .bpb-version
+          git commit -m "🔄 Update BPB Panel to ${{ steps.check.outputs.new_version }}"
+          git push
+      
+      - name: Trigger Cloudflare Pages Rebuild
+        if: steps.check.outputs.update_needed == 'true'
+        run: |
+          # 如果配置了 Cloudflare Deploy Hook，觸發重新部署
+          if [ -n "${{ secrets.CF_DEPLOY_HOOK }}" ]; then
+            curl -X POST "${{ secrets.CF_DEPLOY_HOOK }}"
+            echo "Triggered Cloudflare Pages rebuild"
+          fi

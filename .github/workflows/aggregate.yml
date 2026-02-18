@@ -1,0 +1,75 @@
+# 每日節點聚合和測試
+name: Aggregate Nodes
+
+on:
+  schedule:
+    # 每天 UTC 6:00 (台灣 14:00)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: |
+          pip install aiohttp pyyaml
+      
+      - name: Aggregate Nodes
+        run: |
+          cd scripts
+          python aggregate.py
+        continue-on-error: true
+      
+      - name: Test Nodes
+        run: |
+          cd scripts
+          python test_nodes.py
+        continue-on-error: true
+      
+      - name: Merge Subscriptions
+        run: |
+          cd scripts
+          python merge_subs.py
+      
+      - name: Generate Stats
+        run: |
+          echo "## 📊 Aggregation Stats" > output/stats.md
+          echo "" >> output/stats.md
+          echo "**Updated:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> output/stats.md
+          echo "" >> output/stats.md
+          
+          if [ -f output/index.json ]; then
+            COUNT=$(jq -r '.node_count' output/index.json)
+            echo "**Nodes:** $COUNT" >> output/stats.md
+          fi
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          force_orphan: true
+      
+      - name: Summary
+        run: |
+          echo "## ✅ Aggregation Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f output/index.json ]; then
+            echo "**Nodes:** $(jq -r '.node_count' output/index.json)" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Subscription URLs" >> $GITHUB_STEP_SUMMARY
+          echo "- Sing-box: \`https://<username>.github.io/<repo>/singbox.json\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Clash: \`https://<username>.github.io/<repo>/clash.yaml\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Base64: \`https://<username>.github.io/<repo>/base64.txt\`" >> $GITHUB_STEP_SUMMARY
