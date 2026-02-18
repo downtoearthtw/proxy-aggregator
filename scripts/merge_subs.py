@@ -292,8 +292,9 @@ class SubscriptionMerger:
         for i, node in enumerate(nodes[:self.max_nodes]):
             source = node.get("source", "aggregated")
             prefix = "⭐" if source == "bpb" else "🌐"
-            tag = f"{prefix} {node.get('name') or f'{node.get(\"address\")}:{node.get(\"port\")}'}"[:50]
-            tag = f"{tag}-{i}"  # 確保唯一
+            node_name = node.get('name') or "{}:{}".format(node.get("address"), node.get("port"))
+            tag = "{} {}".format(prefix, node_name)[:50]
+            tag = "{}-{}".format(tag, i)  # 確保唯一
             
             outbound = self.node_to_singbox_outbound(node, tag)
             if outbound:
