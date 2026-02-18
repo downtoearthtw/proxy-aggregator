@@ -25,21 +25,18 @@ jobs:
           pip install aiohttp pyyaml
       
       - name: Aggregate Nodes
-        run: |
-          cd scripts
-          python aggregate.py
+        run: python scripts/aggregate.py
+        working-directory: ${{ github.workspace }}
         continue-on-error: true
       
       - name: Test Nodes
-        run: |
-          cd scripts
-          python test_nodes.py
+        run: python scripts/test_nodes.py
+        working-directory: ${{ github.workspace }}
         continue-on-error: true
       
       - name: Merge Subscriptions
-        run: |
-          cd scripts
-          python merge_subs.py
+        run: python scripts/merge_subs.py
+        working-directory: ${{ github.workspace }}
       
       - name: Generate Stats
         run: |
