@@ -1,0 +1,10 @@
+{
+  "name": "Proxy Aggregator Subscription",
+  "updated": "2026-09-19T09:54:20.358630Z",
+  "node_count": 192,
+  "subscriptions": {
+    "singbox": "singbox.json",
+    "clash": "clash.yaml",
+    "base64": "base64.txt"
+  }
+}
