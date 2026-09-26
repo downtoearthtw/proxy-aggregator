@@ -1,0 +1,1911 @@
+allow-lan: false
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fallback:
+  - https://dns.google/dns-query
+  nameserver:
+  - 8.8.8.8
+  - 1.1.1.1
+external-controller: 127.0.0.1:9090
+log-level: info
+mixed-port: 7890
+mode: rule
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-172.64.150.144-0211-0
+  network: ws
+  port: 443
+  server: 172.64.150.144
+  servername: jp.mywh.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fa94fb93-fef4-4055-bf54-244115640479
+  ws-opts:
+    headers:
+      Host: jp.mywh.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-203.24.108.8-4909-1
+  network: ws
+  port: 443
+  server: 203.24.108.8
+  servername: lg1.trump2023.us
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+  ws-opts:
+    headers:
+      Host: lg1.trump2023.us
+    path: /ECTCJ0DF
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.19.3.16-0205-2
+  network: ws
+  port: 443
+  server: 104.19.3.16
+  servername: v2fly.samrt.website
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+  ws-opts:
+    headers:
+      Host: v2fly.samrt.website
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-188.114.96.19-0158-3
+  network: ws
+  port: 80
+  server: 188.114.96.19
+  type: vmess
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-188.114.96.19-0130-4
+  network: ws
+  port: 80
+  server: 188.114.96.19
+  type: vmess
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-188.114.96.19-0206-5
+  network: ws
+  port: 80
+  server: 188.114.96.19
+  type: vmess
+  uuid: af4be52a-aab3-4db1-a6bb-c23700dcb9c2
+  ws-opts:
+    headers:
+      Host: https.http.www.net.com.ramseyv2.ir.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.19.38.62-0198-6
+  network: ws
+  port: 2086
+  server: 104.19.38.62
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip005.3196772.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.16.85.20-0026-7
+  network: ws
+  port: 80
+  server: 104.16.85.20
+  type: vmess
+  uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+  ws-opts:
+    headers:
+      Host: sg4-v2ray.sshkit.org
+    path: /sshkit/2136177093/631ed45675ad7/
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.19.3.17-0209-8
+  network: ws
+  port: 443
+  server: 104.19.3.17
+  servername: v2fly.samrt.website
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+  ws-opts:
+    headers:
+      Host: v2fly.samrt.website
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-141.101.114.120-0034-9
+  network: ws
+  port: 443
+  server: 141.101.114.120
+  servername: m5.v2rayfree1.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 94887268-f3cb-48be-ade3-87d42faae3e4
+  ws-opts:
+    headers:
+      Host: m5.v2rayfree1.xyz
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-141.101.114.120-0203-10
+  network: ws
+  port: 443
+  server: 141.101.114.120
+  servername: m8.v2rayfree1.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 42eca770-89d8-4da4-b135-b146475e2e0a
+  ws-opts:
+    headers:
+      Host: m8.v2rayfree1.xyz
+    path: /
+- cipher: aes-128-gcm
+  name: 🇨🇦CA-149.22.95.183-0058-11
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-173.244.56.6-0048-12
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.6
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-173.244.56.9-0049-13
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.9
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-167.88.62.62-0200-14
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 167.88.62.62
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-54.147.191.121-0095-15
+  password: amazonskr05
+  port: 443
+  server: 54.147.191.121
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-54.204.185.38-0214-16
+  password: amazonskr05
+  port: 443
+  server: 54.204.185.38
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-54.227.186.25-0421-17
+  password: amazonskr05
+  port: 443
+  server: 54.227.186.25
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-18.205.21.144-0099-18
+  password: amazonskr05
+  port: 443
+  server: 18.205.21.144
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.160-0125-19
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.243-0159-20
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.243
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.244-0124-21
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.244
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.236-0126-22
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-198.98.53.130-0051-23
+  password: eDfN7SODQceIOmIAbtJJtK
+  port: 443
+  server: 198.98.53.130
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-108.181.0.177-0047-24
+  password: G5p6ww4o67HB
+  port: 8388
+  server: 108.181.0.177
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-108.181.118.10-0050-25
+  password: G5p6ww4o67HB
+  port: 8388
+  server: 108.181.118.10
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-129.146.77.248-0191-26
+  network: ws
+  port: 39495
+  server: 129.146.77.248
+  type: vmess
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  ws-opts:
+    headers:
+      Host: 129.146.77.248
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦CA-134.195.198.147-0182-27
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: vk.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: vk.com
+    path: /
+- cipher: rc4-md5
+  name: 🇺🇸US-138.199.42.68-0160-28
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-140.82.63.79-0052-29
+  password: ZoZtfPOyVvmKARUN
+  port: 8388
+  server: 140.82.63.79
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-15.204.247.206-0118-30
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 15.204.247.206
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.168-0140-31
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.169-0145-32
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.170-0134-33
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇯🇵JP-18.181.165.254-0166-34
+  password: amazonskr05
+  port: 443
+  server: 18.181.165.254
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇯🇵JP-84.247.155.196-0120-35
+  password: 3eOFeNssde7PYYMv
+  port: 443
+  server: 84.247.155.196
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇯🇵JP-84.247.155.196-0132-36
+  password: 3eOFeNssde7PYYMv
+  port: 80
+  server: 84.247.155.196
+  type: ss
+- cipher: rc4-md5
+  name: 🇨🇦CA-137.184.174.93-0103-37
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 137.184.174.93
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0135-38
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.240-0136-39
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0137-40
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵JP-64.176.51.214-0157-41
+  network: ws
+  port: 23462
+  server: 64.176.51.214
+  type: vmess
+  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
+  ws-opts:
+    headers: {}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵JP-172.111.146.64-5225-42
+  network: ws
+  port: 80
+  server: 172.111.146.64
+  type: vmess
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  ws-opts:
+    headers: {}
+    path: /vmess/
+- name: 🇯🇵JP-153.125.148.41-0219-43
+  password: 14bdba6dede262387ebdebaa706e1c90
+  port: 443
+  server: trs12.bolab.net
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-211.178.105.134-0129-44
+  password: qwerREWQ@@
+  port: 6123
+  server: 211.178.105.134
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼TW-36.224.141.124-0121-45
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg001286ek2.cybervena.com
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-49.254.204.134-0156-46
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼TW-61.223.82.230-0152-47
+  network: ws
+  port: 443
+  server: 24864168545164.oylfmxz.cn
+  servername: 24864168545164.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      Host: 24864168545164.oylfmxz.cn
+    path: /
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.181-0115-48
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.181
+  type: ss
+- cipher: rc4-md5
+  name: 🇬🇧GB-146.70.61.37-0217-49
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.37
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-47.244.120.197-5215-50
+  network: ws
+  port: 44867
+  server: 47.244.120.197
+  type: vmess
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  ws-opts:
+    headers: {}
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-47.244.120.197-5213-51
+  network: ws
+  port: 36703
+  server: 47.244.120.197
+  type: vmess
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  ws-opts:
+    headers: {}
+    path: /arki?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-108.181.58.239-0106-52
+  password: CJmTCCx7Ltud
+  port: 8388
+  server: 108.181.58.239
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-209.46.102.22-0143-53
+  password: 1hhrqrokj3ag
+  port: 8388
+  server: 209.46.102.22
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇭🇰HK-103.149.182.79-0141-54
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-108.181.126.122-0107-55
+  password: CJmTCCx7Ltud
+  port: 8388
+  server: 108.181.126.122
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇳🇱NL-158.173.20.171-0154-56
+  password: shadowsocks
+  port: 443
+  server: 158.173.20.171
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇭🇰HK-103.149.182.105-0192-57
+  password: asd123456
+  port: 8388
+  server: 103.149.182.105
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇴NO-185.213.23.63-5306-58
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 185.213.23.63
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-156.245.232.239-0148-59
+  network: ws
+  port: 35043
+  server: 156.245.232.239
+  type: vmess
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  ws-opts:
+    headers: {}
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-8.209.74.72-0113-60
+  password: PWpjPo3tqhPN4yRZ
+  port: 20001
+  server: 8.209.74.72
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.168-0092-61
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.168
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.190-0096-62
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.190
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.206-0079-63
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.206
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.208-0061-64
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.212-0059-65
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.216-0073-66
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.216
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.34-0063-67
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.34
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.47-0055-68
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.47
+  type: ss
+- cipher: aes-128-cfb
+  name: 🇳🇱NL-109.201.152.181-0109-69
+  password: shadowsocks
+  port: 443
+  server: 109.201.152.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.147-0083-70
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.155-0064-71
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.155
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.194-0074-72
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.194
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.207-0082-73
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.207
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.151-0085-74
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.151
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.204-0067-75
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.204
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.223-0081-76
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.223
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.235-0087-77
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.235
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇮🇹IT-57.131.48.45-0108-78
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.16-0072-79
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.16
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.180-0077-80
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.180
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.181-0078-81
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.186-0105-82
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.186
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.191-0101-83
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.192-0091-84
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.199-0131-85
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.2-0054-86
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.210-0084-87
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.210
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.42-0069-88
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.42
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.48-0090-89
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.48
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.49-0088-90
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.49
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.66-0086-91
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.82-0066-92
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.82
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇸🇪SE-16.171.55.2-0139-93
+  password: amazonskr05
+  port: 443
+  server: 16.171.55.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.202-0071-94
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.217-0098-95
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.61-0065-96
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.61
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.176-0119-97
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.187-0076-98
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.187
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.203-0057-99
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.203
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.219-0123-100
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.219
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.62-0097-101
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.62
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.149-0056-102
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.149
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.162-0053-103
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.162
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.174-0080-104
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.174
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.184-0068-105
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.184
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.205-0070-106
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.214-0089-107
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.3-0102-108
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.3
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.46-0104-109
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.46
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇸🇪SE-16.170.214.108-0112-110
+  password: amazonskr05
+  port: 443
+  server: 16.170.214.108
+  type: ss
+- cipher: rc4-md5
+  name: 🇸🇬SG-68.183.227.4-0114-111
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.10-0093-112
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.10
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.174-0094-113
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.174
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.179-0075-114
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.193-0100-115
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.193
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.218-0144-116
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.35-0060-117
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.35
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇸🇪SE-13.49.64.122-0597-118
+  password: amazonskr05
+  port: 443
+  server: 13.49.64.122
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇸🇪SE-51.20.122.188-0111-119
+  password: amazonskr05
+  port: 443
+  server: 51.20.122.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR-54.36.174.140-0117-120
+  password: mrs2e9a
+  port: 443
+  server: 54.36.174.140
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇬🇧GB-94.156.250.148-0127-121
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 94.156.250.148
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.32-0153-122
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-158.173.221.214-0128-123
+  password: c58d16e593d44f42
+  port: 11001
+  server: 158.173.221.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦ZA-102.133.165.160-0142-124
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  port: 16233
+  server: 102.133.165.160
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦ZA-102.37.156.224-0116-125
+  password: aduB9HGxQHjA2SBMRjkHX6
+  port: 443
+  server: 102.37.156.224
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦ZA-139.84.247.164-0122-126
+  password: tfAcRikawhNoZAhu
+  port: 8388
+  server: 139.84.247.164
+  type: ss
+- name: 🇺🇸 美国 | USA 7-127
+  password: humanity
+  port: 443
+  server: 104.16.174.109
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 3-128
+  password: humanity
+  port: 443
+  server: 104.16.174.12
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 22-129
+  password: humanity
+  port: 443
+  server: 104.16.174.71
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 11-130
+  password: humanity
+  port: 443
+  server: 104.17.111.1
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 12-131
+  password: humanity
+  port: 443
+  server: 104.17.111.8
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 8-132
+  password: humanity
+  port: 443
+  server: 104.18.12.149
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇫🇷 法国 | FRA 5-133
+  password: humanity
+  port: 443
+  server: 104.18.152.113
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA-134
+  password: humanity
+  port: 443
+  server: 104.18.152.133
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 4-135
+  password: humanity
+  port: 443
+  server: 104.18.152.140
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 14-136
+  password: humanity
+  port: 443
+  server: 104.18.152.161
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 18-137
+  password: humanity
+  port: 443
+  server: 104.18.152.225
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 21-138
+  password: humanity
+  port: 443
+  server: 104.18.152.73
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇫🇷 法国 | FRA 2-139
+  password: humanity
+  port: 443
+  server: 104.18.152.97
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇫🇷 法国 | FRA 3-140
+  password: humanity
+  port: 443
+  server: 104.26.15.137
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 23-141
+  network: ws
+  port: 443
+  server: a2.arshia-nova.ir
+  servername: ssl.fastly.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇺🇸US_9|1.3MB/s-142
+  network: ws
+  port: 443
+  server: minimize-evenness.cdn-content.com
+  servername: minimize-evenness.cdn-content.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 4ea9c6dd-4d73-49f2-82ce-b80b1b5dd646
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇺🇸 美国 | USA 10-143
+  password: humanity
+  port: 443
+  server: www.speedtest.net
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 5-144
+  password: humanity
+  port: 443
+  server: 104.16.174.36
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 15-145
+  password: humanity
+  port: 443
+  server: 104.16.174.72
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 6-146
+  network: ws
+  port: 2087
+  server: cdn4.greewebservices.ir
+  servername: usp1cdnsldsk.deldadehnoor.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: a11cb858-4a42-4735-b40b-4cba1560b959
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇫🇷 法国 | FRA-147
+  password: humanity
+  port: 443
+  server: 104.16.174.185
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 2-148
+  password: humanity
+  port: 443
+  server: 130.250.137.171
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸_US_美国_3-149
+  network: ws
+  port: 443
+  server: 0.I0-6.de5.neT
+  servername: 0.i0-6.dE5.NEt
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇺🇸_US_美国_4-150
+  network: ws
+  port: 443
+  server: 1.i0-4.De5.nEt
+  servername: 1.I0-4.de5.Net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇺🇸 美国 | USA 20-151
+  password: humanity
+  port: 443
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_1-152
+  network: ws
+  port: 443
+  server: guanwang.awsno.com
+  servername: guanwang.awsno.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  ws-opts:
+    headers:
+      Host: guanwang.awsno.com
+    path: /hls/cctv5phd.m3u8
+- name: 🇺🇸 美国 | USA 13-153
+  password: humanity
+  port: 443
+  server: 162.159.254.191
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇫🇷 法国 | FRA 6-154
+  password: humanity
+  port: 443
+  server: 159.112.235.52
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇯🇵JP_1|3.8MB/s-155
+  network: ws
+  port: 443
+  server: cos-cdn-a.alicdn.win
+  servername: mms-static-rr6asx-e.oppocdn.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 52fa48c9-1c1f-4c24-badb-ad92c18e6f92
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 美国3|@ripaojiedian-156
+  password: BxceQaOe
+  port: 443
+  server: 100.42.228.109
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 🇫🇷 法国 | FRA 4-157
+  password: humanity
+  port: 443
+  server: 172.67.149.60
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇺🇸US_2|2.8MB/s-158
+  network: ws
+  port: 443
+  server: 172.67.189.137
+  servername: Cc.huAnGshANg.hIDNs.cO
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇵🇱 波兰 | POL-159
+  network: ws
+  port: 2052
+  server: 172.67.221.237
+  type: vless
+  uuid: 4b87c68d-762f-4969-9680-36bfb9daa858
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇺🇸 美国 | USA 26-160
+  network: ws
+  port: 80
+  server: 172.64.229.170
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇺🇸 美国 | USA 17-161
+  port: 35064
+  server: direct-us-03.xlww.cc
+  servername: swdist.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: a987ab53-6f52-4155-adcc-75b03e945b98
+- name: 🇺🇸US_10|2.1MB/s-162
+  port: 47700
+  server: 108.186.180.148
+  servername: www.amazon.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: af24a0e4-f5a2-4b97-a678-992d45346147
+- name: 🇺🇸US_13|3.8MB/s-163
+  port: 443
+  server: c10s3.portablesubmarines.com
+  servername: portal.citygrainla.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 88882ac2-0f7c-4907-9605-b847f79ec9d3
+- name: 🇺🇸_US_美国_2-164
+  network: ws
+  port: 443
+  server: 2.I0-6.DE5.neT
+  servername: 2.i0-6.de5.Net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇩🇪 德国 | DEU 8-165
+  network: ws
+  port: 80
+  server: fi.snobvpn.online
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  ws-opts:
+    headers: {}
+    path: ''
+- name: US_speednode_0136-166
+  port: 29893
+  server: 155.117.199.13
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+- name: US_speednode_0137-167
+  port: 39399
+  server: 155.117.199.13
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+- name: US_speednode_0142-168
+  port: 39211
+  server: 155.117.199.13
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+- name: 🇺🇸_US_美国-169
+  network: ws
+  port: 443
+  server: Rr.i0-0.De5.NeT
+  servername: rR.i0-0.De5.NEt
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇺🇸 美国 | USA 9-170
+  password: humanity
+  port: 443
+  server: 188.114.96.3
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+- name: 🇺🇸 美国 | USA 24-171
+  network: ws
+  port: 443
+  server: 172.67.142.235
+  servername: 1.I0-4.de5.Net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇮🇪 爱尔兰 | IRL-172
+  port: 443
+  server: ireland-new-ded1.failspace.top
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国-173
+  port: 50002
+  server: 112.132.215.108
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇫🇷_FR_法国_4-174
+  port: 22222
+  server: 13.39.231.13
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷_FR_法国_1-175
+  port: 22223
+  server: 13.39.231.13
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷_FR_法国_2-176
+  port: 22224
+  server: 13.39.231.13
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇳🇱 荷兰 | NLD-177
+  port: 443
+  server: 13.143.141.78
+  servername: cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: cfed68c4-fc10-4638-b3ca-140e1e873797
+- name: 🇳🇱NL_14|2.9MB/s-178
+  network: ws
+  port: 2096
+  server: nl9-node.rumedia-cdn.com
+  servername: stadb90.rumedia-cdn.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  ws-opts:
+    headers: {}
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰_HK_中国香港->🇺🇸_US_美国-179
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本-180
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-128-gcm
+  name: 🇺🇸 美国|@ripaojiedian-181
+  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+  port: 36608
+  server: gd.bjnet2.com
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇨🇳 台湾|@ripaojiedian-182
+  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+  port: 36603
+  server: gd.bjnet2.com
+  type: ss
+- name: 🇳🇱NL_15|1.1MB/s-183
+  port: 443
+  server: hub-mori-new.failspace.top
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- cipher: aes-128-gcm
+  name: 🇯🇵 日本|@ripaojiedian-184
+  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+  port: 36609
+  server: gd.bjnet2.com
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇭🇰 香港2|@ripaojiedian-185
+  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+  port: 36602
+  server: gd.bjnet2.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰_HK_中国香港->🇬🇧_GB_英国-186
+  port: 30836
+  server: v36.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇩🇪DE_2|4.3MB/s-187
+  port: 2434
+  server: de14.bexait.ir
+  servername: icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: b8948424-5bca-4792-b2c2-c1ce226b3531
+- name: 🇨🇱 智利 | CHL-188
+  network: ws
+  port: 80
+  server: platform115.golnamakcert.top
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇩🇪 德国 | DEU 7-189
+  port: 2434
+  server: de18.bexait.ir
+  servername: icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 8dfc237e-0376-48b4-9822-5f4e627d41f1
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国-190
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 | SGP-191
+  port: 59121
+  server: 129.226.157.220
+  type: vmess
+  uuid: d9865d63-d95c-454b-ba07-8e88b838a801
+- name: 🇫🇷_FR_法国_5-192
+  port: 22222
+  server: 15.224.68.85
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇵🇱 波兰 | POL 2-193
+  port: 8444
+  server: 151.241.138.151
+  servername: pl1.gursub.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰_HK_中国香港_1-194
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇮🇱IL_1|1.4MB/s-195
+  network: ws
+  port: 80
+  server: platform101.golnamakcert.top
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇨🇱 智利 | CHL 2-196
+  network: ws
+  port: 80
+  server: platform103.golnamakcert.top
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers: {}
+    path: ''
+- name: 🇩🇪 德国 | DEU 6-197
+  port: 9543
+  server: 2.26.11.234
+  servername: storage.yandexcloud.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+- cipher: aes-256-cfb
+  name: 'tg频道:@ripaojiedian #1-198'
+  password: amazonskr05
+  port: 443
+  server: 63.180.254.10
+  type: ss
+- name: 🇪🇸 西班牙 | ESP-199
+  port: 443
+  server: esbe.vihodest.net
+  servername: esbe.vihodest.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
+proxy-groups:
+- name: 🚀 Proxy
+  proxies:
+  - ⚡ Auto
+  - 🏁RELAY-172.64.150.144-0211-0
+  - 🏁RELAY-203.24.108.8-4909-1
+  - 🏁RELAY-104.19.3.16-0205-2
+  - 🏁RELAY-188.114.96.19-0158-3
+  - 🏁RELAY-188.114.96.19-0130-4
+  - 🏁RELAY-188.114.96.19-0206-5
+  - 🏁RELAY-104.19.38.62-0198-6
+  - 🏁RELAY-104.16.85.20-0026-7
+  - 🏁RELAY-104.19.3.17-0209-8
+  - 🏁RELAY-141.101.114.120-0034-9
+  - 🏁RELAY-141.101.114.120-0203-10
+  - 🇨🇦CA-149.22.95.183-0058-11
+  - 🇺🇸US-173.244.56.6-0048-12
+  - 🇺🇸US-173.244.56.9-0049-13
+  - 🇺🇸US-167.88.62.62-0200-14
+  - 🇺🇸US-54.147.191.121-0095-15
+  - 🇺🇸US-54.204.185.38-0214-16
+  - 🇺🇸US-54.227.186.25-0421-17
+  - 🇺🇸US-18.205.21.144-0099-18
+  - 🇺🇸US-37.19.198.160-0125-19
+  - 🇺🇸US-37.19.198.243-0159-20
+  - 🇺🇸US-37.19.198.244-0124-21
+  - 🇺🇸US-37.19.198.236-0126-22
+  - 🇺🇸US-198.98.53.130-0051-23
+  - 🇺🇸US-108.181.0.177-0047-24
+  - 🇨🇦CA-108.181.118.10-0050-25
+  - 🇺🇸US-129.146.77.248-0191-26
+  - 🇨🇦CA-134.195.198.147-0182-27
+  - 🇺🇸US-138.199.42.68-0160-28
+  - 🇺🇸US-140.82.63.79-0052-29
+  - 🇺🇸US-15.204.247.206-0118-30
+  - 🇺🇸US-156.146.38.168-0140-31
+  - 🇺🇸US-156.146.38.169-0145-32
+  - 🇺🇸US-156.146.38.170-0134-33
+  - 🇯🇵JP-18.181.165.254-0166-34
+  - 🇯🇵JP-84.247.155.196-0120-35
+  - 🇯🇵JP-84.247.155.196-0132-36
+  - 🇨🇦CA-137.184.174.93-0103-37
+  - 🇯🇵JP-149.22.87.204-0135-38
+  - 🇯🇵JP-149.22.87.240-0136-39
+  - 🇯🇵JP-149.22.87.241-0137-40
+  - 🇯🇵JP-64.176.51.214-0157-41
+  - 🇯🇵JP-172.111.146.64-5225-42
+  - 🇯🇵JP-153.125.148.41-0219-43
+  - 🇰🇷KR-211.178.105.134-0129-44
+  - 🇹🇼TW-36.224.141.124-0121-45
+  - 🇰🇷KR-49.254.204.134-0156-46
+  - 🇹🇼TW-61.223.82.230-0152-47
+  - 🇬🇧GB-141.98.101.181-0115-48
+  - 🇬🇧GB-146.70.61.37-0217-49
+  - 🇭🇰HK-47.244.120.197-5215-50
+  - 🇭🇰HK-47.244.120.197-5213-51
+  - 🇳🇱NL-108.181.58.239-0106-52
+  - 🇩🇪DE-209.46.102.22-0143-53
+  - 🇭🇰HK-103.149.182.79-0141-54
+  - 🇳🇱NL-108.181.126.122-0107-55
+  - 🇳🇱NL-158.173.20.171-0154-56
+  - 🇭🇰HK-103.149.182.105-0192-57
+  - 🇳🇴NO-185.213.23.63-5306-58
+  - 🇭🇰HK-156.245.232.239-0148-59
+  - 🇩🇪DE-8.209.74.72-0113-60
+  - 🇳🇱NL-193.29.139.168-0092-61
+  - 🇬🇧GB-82.38.31.190-0096-62
+  - 🇬🇧GB-82.38.31.206-0079-63
+  - 🇬🇧GB-82.38.31.208-0061-64
+  - 🇬🇧GB-82.38.31.212-0059-65
+  - 🇬🇧GB-82.38.31.216-0073-66
+  - 🇬🇧GB-82.38.31.34-0063-67
+  - 🇬🇧GB-82.38.31.47-0055-68
+  - 🇳🇱NL-109.201.152.181-0109-69
+  - 🇳🇱NL-193.29.139.147-0083-70
+  - 🇬🇧GB-82.38.31.155-0064-71
+  - 🇬🇧GB-82.38.31.194-0074-72
+  - 🇬🇧GB-82.38.31.207-0082-73
+  - 🇳🇱NL-193.29.139.151-0085-74
+  - 🇳🇱NL-193.29.139.204-0067-75
+  - 🇳🇱NL-193.29.139.223-0081-76
+  - 🇳🇱NL-193.29.139.235-0087-77
+  - 🇮🇹IT-57.131.48.45-0108-78
+  - 🇬🇧GB-82.38.31.16-0072-79
+  - 🇬🇧GB-82.38.31.180-0077-80
+  - 🇬🇧GB-82.38.31.181-0078-81
+  - 🇬🇧GB-82.38.31.186-0105-82
+  - 🇬🇧GB-82.38.31.191-0101-83
+  - 🇬🇧GB-82.38.31.192-0091-84
+  - 🇬🇧GB-82.38.31.199-0131-85
+  - 🇬🇧GB-82.38.31.2-0054-86
+  - 🇬🇧GB-82.38.31.210-0084-87
+  - 🇬🇧GB-82.38.31.42-0069-88
+  - 🇬🇧GB-82.38.31.48-0090-89
+  - 🇬🇧GB-82.38.31.49-0088-90
+  - 🇬🇧GB-82.38.31.66-0086-91
+  - 🇬🇧GB-82.38.31.82-0066-92
+  - 🇸🇪SE-16.171.55.2-0139-93
+  - 🇬🇧GB-82.38.31.202-0071-94
+  - 🇬🇧GB-82.38.31.217-0098-95
+  - 🇬🇧GB-82.38.31.61-0065-96
+  - 🇬🇧GB-82.38.31.176-0119-97
+  - 🇬🇧GB-82.38.31.187-0076-98
+  - 🇬🇧GB-82.38.31.203-0057-99
+  - 🇬🇧GB-82.38.31.219-0123-100
+  - 🇬🇧GB-82.38.31.62-0097-101
+  - 🇬🇧GB-82.38.31.149-0056-102
+  - 🇬🇧GB-82.38.31.162-0053-103
+  - 🇬🇧GB-82.38.31.174-0080-104
+  - 🇬🇧GB-82.38.31.184-0068-105
+  - 🇬🇧GB-82.38.31.205-0070-106
+  - 🇬🇧GB-82.38.31.214-0089-107
+  - 🇬🇧GB-82.38.31.3-0102-108
+  - 🇬🇧GB-82.38.31.46-0104-109
+  - 🇸🇪SE-16.170.214.108-0112-110
+  - 🇸🇬SG-68.183.227.4-0114-111
+  - 🇬🇧GB-82.38.31.10-0093-112
+  - 🇬🇧GB-82.38.31.174-0094-113
+  - 🇬🇧GB-82.38.31.179-0075-114
+  - 🇬🇧GB-82.38.31.193-0100-115
+  - 🇬🇧GB-82.38.31.218-0144-116
+  - 🇬🇧GB-82.38.31.35-0060-117
+  - 🇸🇪SE-13.49.64.122-0597-118
+  - 🇸🇪SE-51.20.122.188-0111-119
+  - 🇫🇷FR-54.36.174.140-0117-120
+  - 🇬🇧GB-94.156.250.148-0127-121
+  - 🇸🇬SG-103.36.91.32-0153-122
+  - 🇳🇱NL-158.173.221.214-0128-123
+  - 🇿🇦ZA-102.133.165.160-0142-124
+  - 🇿🇦ZA-102.37.156.224-0116-125
+  - 🇿🇦ZA-139.84.247.164-0122-126
+  - 🇺🇸 美国 | USA 7-127
+  - 🇺🇸 美国 | USA 3-128
+  - 🇺🇸 美国 | USA 22-129
+  - 🇺🇸 美国 | USA 11-130
+  - 🇺🇸 美国 | USA 12-131
+  - 🇺🇸 美国 | USA 8-132
+  - 🇫🇷 法国 | FRA 5-133
+  - 🇺🇸 美国 | USA-134
+  - 🇺🇸 美国 | USA 4-135
+  - 🇺🇸 美国 | USA 14-136
+  - 🇺🇸 美国 | USA 18-137
+  - 🇺🇸 美国 | USA 21-138
+  - 🇫🇷 法国 | FRA 2-139
+  - 🇫🇷 法国 | FRA 3-140
+  - 🇺🇸 美国 | USA 23-141
+  - 🇺🇸US_9|1.3MB/s-142
+  - 🇺🇸 美国 | USA 10-143
+  - 🇺🇸 美国 | USA 5-144
+  - 🇺🇸 美国 | USA 15-145
+  - 🇺🇸 美国 | USA 6-146
+  - 🇫🇷 法国 | FRA-147
+  - 🇺🇸 美国 | USA 2-148
+  - 🇺🇸_US_美国_3-149
+  - 🇺🇸_US_美国_4-150
+  - 🇺🇸 美国 | USA 20-151
+  - 🇺🇸_US_美国_1-152
+  - 🇺🇸 美国 | USA 13-153
+  - 🇫🇷 法国 | FRA 6-154
+  - 🇯🇵JP_1|3.8MB/s-155
+  - 美国3|@ripaojiedian-156
+  - 🇫🇷 法国 | FRA 4-157
+  - 🇺🇸US_2|2.8MB/s-158
+  - 🇵🇱 波兰 | POL-159
+  - 🇺🇸 美国 | USA 26-160
+  - 🇺🇸 美国 | USA 17-161
+  - 🇺🇸US_10|2.1MB/s-162
+  - 🇺🇸US_13|3.8MB/s-163
+  - 🇺🇸_US_美国_2-164
+  - 🇩🇪 德国 | DEU 8-165
+  - US_speednode_0136-166
+  - US_speednode_0137-167
+  - US_speednode_0142-168
+  - 🇺🇸_US_美国-169
+  - 🇺🇸 美国 | USA 9-170
+  - 🇺🇸 美国 | USA 24-171
+  - 🇮🇪 爱尔兰 | IRL-172
+  - 🇨🇳_CN_中国-173
+  - 🇫🇷_FR_法国_4-174
+  - 🇫🇷_FR_法国_1-175
+  - 🇫🇷_FR_法国_2-176
+  - 🇳🇱 荷兰 | NLD-177
+  - 🇳🇱NL_14|2.9MB/s-178
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国-179
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本-180
+  - 🇺🇸 美国|@ripaojiedian-181
+  - 🇨🇳 台湾|@ripaojiedian-182
+  - 🇳🇱NL_15|1.1MB/s-183
+  - 🇯🇵 日本|@ripaojiedian-184
+  - 🇭🇰 香港2|@ripaojiedian-185
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国-186
+  - 🇩🇪DE_2|4.3MB/s-187
+  - 🇨🇱 智利 | CHL-188
+  - 🇩🇪 德国 | DEU 7-189
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国-190
+  - 🇸🇬 新加坡 | SGP-191
+  - 🇫🇷_FR_法国_5-192
+  - 🇵🇱 波兰 | POL 2-193
+  - 🇭🇰_HK_中国香港_1-194
+  - 🇮🇱IL_1|1.4MB/s-195
+  - 🇨🇱 智利 | CHL 2-196
+  - 🇩🇪 德国 | DEU 6-197
+  - 'tg频道:@ripaojiedian #1-198'
+  - 🇪🇸 西班牙 | ESP-199
+  - DIRECT
+  type: select
+- interval: 300
+  name: ⚡ Auto
+  proxies:
+  - 🏁RELAY-172.64.150.144-0211-0
+  - 🏁RELAY-203.24.108.8-4909-1
+  - 🏁RELAY-104.19.3.16-0205-2
+  - 🏁RELAY-188.114.96.19-0158-3
+  - 🏁RELAY-188.114.96.19-0130-4
+  - 🏁RELAY-188.114.96.19-0206-5
+  - 🏁RELAY-104.19.38.62-0198-6
+  - 🏁RELAY-104.16.85.20-0026-7
+  - 🏁RELAY-104.19.3.17-0209-8
+  - 🏁RELAY-141.101.114.120-0034-9
+  - 🏁RELAY-141.101.114.120-0203-10
+  - 🇨🇦CA-149.22.95.183-0058-11
+  - 🇺🇸US-173.244.56.6-0048-12
+  - 🇺🇸US-173.244.56.9-0049-13
+  - 🇺🇸US-167.88.62.62-0200-14
+  - 🇺🇸US-54.147.191.121-0095-15
+  - 🇺🇸US-54.204.185.38-0214-16
+  - 🇺🇸US-54.227.186.25-0421-17
+  - 🇺🇸US-18.205.21.144-0099-18
+  - 🇺🇸US-37.19.198.160-0125-19
+  - 🇺🇸US-37.19.198.243-0159-20
+  - 🇺🇸US-37.19.198.244-0124-21
+  - 🇺🇸US-37.19.198.236-0126-22
+  - 🇺🇸US-198.98.53.130-0051-23
+  - 🇺🇸US-108.181.0.177-0047-24
+  - 🇨🇦CA-108.181.118.10-0050-25
+  - 🇺🇸US-129.146.77.248-0191-26
+  - 🇨🇦CA-134.195.198.147-0182-27
+  - 🇺🇸US-138.199.42.68-0160-28
+  - 🇺🇸US-140.82.63.79-0052-29
+  - 🇺🇸US-15.204.247.206-0118-30
+  - 🇺🇸US-156.146.38.168-0140-31
+  - 🇺🇸US-156.146.38.169-0145-32
+  - 🇺🇸US-156.146.38.170-0134-33
+  - 🇯🇵JP-18.181.165.254-0166-34
+  - 🇯🇵JP-84.247.155.196-0120-35
+  - 🇯🇵JP-84.247.155.196-0132-36
+  - 🇨🇦CA-137.184.174.93-0103-37
+  - 🇯🇵JP-149.22.87.204-0135-38
+  - 🇯🇵JP-149.22.87.240-0136-39
+  - 🇯🇵JP-149.22.87.241-0137-40
+  - 🇯🇵JP-64.176.51.214-0157-41
+  - 🇯🇵JP-172.111.146.64-5225-42
+  - 🇯🇵JP-153.125.148.41-0219-43
+  - 🇰🇷KR-211.178.105.134-0129-44
+  - 🇹🇼TW-36.224.141.124-0121-45
+  - 🇰🇷KR-49.254.204.134-0156-46
+  - 🇹🇼TW-61.223.82.230-0152-47
+  - 🇬🇧GB-141.98.101.181-0115-48
+  - 🇬🇧GB-146.70.61.37-0217-49
+  - 🇭🇰HK-47.244.120.197-5215-50
+  - 🇭🇰HK-47.244.120.197-5213-51
+  - 🇳🇱NL-108.181.58.239-0106-52
+  - 🇩🇪DE-209.46.102.22-0143-53
+  - 🇭🇰HK-103.149.182.79-0141-54
+  - 🇳🇱NL-108.181.126.122-0107-55
+  - 🇳🇱NL-158.173.20.171-0154-56
+  - 🇭🇰HK-103.149.182.105-0192-57
+  - 🇳🇴NO-185.213.23.63-5306-58
+  - 🇭🇰HK-156.245.232.239-0148-59
+  - 🇩🇪DE-8.209.74.72-0113-60
+  - 🇳🇱NL-193.29.139.168-0092-61
+  - 🇬🇧GB-82.38.31.190-0096-62
+  - 🇬🇧GB-82.38.31.206-0079-63
+  - 🇬🇧GB-82.38.31.208-0061-64
+  - 🇬🇧GB-82.38.31.212-0059-65
+  - 🇬🇧GB-82.38.31.216-0073-66
+  - 🇬🇧GB-82.38.31.34-0063-67
+  - 🇬🇧GB-82.38.31.47-0055-68
+  - 🇳🇱NL-109.201.152.181-0109-69
+  - 🇳🇱NL-193.29.139.147-0083-70
+  - 🇬🇧GB-82.38.31.155-0064-71
+  - 🇬🇧GB-82.38.31.194-0074-72
+  - 🇬🇧GB-82.38.31.207-0082-73
+  - 🇳🇱NL-193.29.139.151-0085-74
+  - 🇳🇱NL-193.29.139.204-0067-75
+  - 🇳🇱NL-193.29.139.223-0081-76
+  - 🇳🇱NL-193.29.139.235-0087-77
+  - 🇮🇹IT-57.131.48.45-0108-78
+  - 🇬🇧GB-82.38.31.16-0072-79
+  - 🇬🇧GB-82.38.31.180-0077-80
+  - 🇬🇧GB-82.38.31.181-0078-81
+  - 🇬🇧GB-82.38.31.186-0105-82
+  - 🇬🇧GB-82.38.31.191-0101-83
+  - 🇬🇧GB-82.38.31.192-0091-84
+  - 🇬🇧GB-82.38.31.199-0131-85
+  - 🇬🇧GB-82.38.31.2-0054-86
+  - 🇬🇧GB-82.38.31.210-0084-87
+  - 🇬🇧GB-82.38.31.42-0069-88
+  - 🇬🇧GB-82.38.31.48-0090-89
+  - 🇬🇧GB-82.38.31.49-0088-90
+  - 🇬🇧GB-82.38.31.66-0086-91
+  - 🇬🇧GB-82.38.31.82-0066-92
+  - 🇸🇪SE-16.171.55.2-0139-93
+  - 🇬🇧GB-82.38.31.202-0071-94
+  - 🇬🇧GB-82.38.31.217-0098-95
+  - 🇬🇧GB-82.38.31.61-0065-96
+  - 🇬🇧GB-82.38.31.176-0119-97
+  - 🇬🇧GB-82.38.31.187-0076-98
+  - 🇬🇧GB-82.38.31.203-0057-99
+  - 🇬🇧GB-82.38.31.219-0123-100
+  - 🇬🇧GB-82.38.31.62-0097-101
+  - 🇬🇧GB-82.38.31.149-0056-102
+  - 🇬🇧GB-82.38.31.162-0053-103
+  - 🇬🇧GB-82.38.31.174-0080-104
+  - 🇬🇧GB-82.38.31.184-0068-105
+  - 🇬🇧GB-82.38.31.205-0070-106
+  - 🇬🇧GB-82.38.31.214-0089-107
+  - 🇬🇧GB-82.38.31.3-0102-108
+  - 🇬🇧GB-82.38.31.46-0104-109
+  - 🇸🇪SE-16.170.214.108-0112-110
+  - 🇸🇬SG-68.183.227.4-0114-111
+  - 🇬🇧GB-82.38.31.10-0093-112
+  - 🇬🇧GB-82.38.31.174-0094-113
+  - 🇬🇧GB-82.38.31.179-0075-114
+  - 🇬🇧GB-82.38.31.193-0100-115
+  - 🇬🇧GB-82.38.31.218-0144-116
+  - 🇬🇧GB-82.38.31.35-0060-117
+  - 🇸🇪SE-13.49.64.122-0597-118
+  - 🇸🇪SE-51.20.122.188-0111-119
+  - 🇫🇷FR-54.36.174.140-0117-120
+  - 🇬🇧GB-94.156.250.148-0127-121
+  - 🇸🇬SG-103.36.91.32-0153-122
+  - 🇳🇱NL-158.173.221.214-0128-123
+  - 🇿🇦ZA-102.133.165.160-0142-124
+  - 🇿🇦ZA-102.37.156.224-0116-125
+  - 🇿🇦ZA-139.84.247.164-0122-126
+  - 🇺🇸 美国 | USA 7-127
+  - 🇺🇸 美国 | USA 3-128
+  - 🇺🇸 美国 | USA 22-129
+  - 🇺🇸 美国 | USA 11-130
+  - 🇺🇸 美国 | USA 12-131
+  - 🇺🇸 美国 | USA 8-132
+  - 🇫🇷 法国 | FRA 5-133
+  - 🇺🇸 美国 | USA-134
+  - 🇺🇸 美国 | USA 4-135
+  - 🇺🇸 美国 | USA 14-136
+  - 🇺🇸 美国 | USA 18-137
+  - 🇺🇸 美国 | USA 21-138
+  - 🇫🇷 法国 | FRA 2-139
+  - 🇫🇷 法国 | FRA 3-140
+  - 🇺🇸 美国 | USA 23-141
+  - 🇺🇸US_9|1.3MB/s-142
+  - 🇺🇸 美国 | USA 10-143
+  - 🇺🇸 美国 | USA 5-144
+  - 🇺🇸 美国 | USA 15-145
+  - 🇺🇸 美国 | USA 6-146
+  - 🇫🇷 法国 | FRA-147
+  - 🇺🇸 美国 | USA 2-148
+  - 🇺🇸_US_美国_3-149
+  - 🇺🇸_US_美国_4-150
+  - 🇺🇸 美国 | USA 20-151
+  - 🇺🇸_US_美国_1-152
+  - 🇺🇸 美国 | USA 13-153
+  - 🇫🇷 法国 | FRA 6-154
+  - 🇯🇵JP_1|3.8MB/s-155
+  - 美国3|@ripaojiedian-156
+  - 🇫🇷 法国 | FRA 4-157
+  - 🇺🇸US_2|2.8MB/s-158
+  - 🇵🇱 波兰 | POL-159
+  - 🇺🇸 美国 | USA 26-160
+  - 🇺🇸 美国 | USA 17-161
+  - 🇺🇸US_10|2.1MB/s-162
+  - 🇺🇸US_13|3.8MB/s-163
+  - 🇺🇸_US_美国_2-164
+  - 🇩🇪 德国 | DEU 8-165
+  - US_speednode_0136-166
+  - US_speednode_0137-167
+  - US_speednode_0142-168
+  - 🇺🇸_US_美国-169
+  - 🇺🇸 美国 | USA 9-170
+  - 🇺🇸 美国 | USA 24-171
+  - 🇮🇪 爱尔兰 | IRL-172
+  - 🇨🇳_CN_中国-173
+  - 🇫🇷_FR_法国_4-174
+  - 🇫🇷_FR_法国_1-175
+  - 🇫🇷_FR_法国_2-176
+  - 🇳🇱 荷兰 | NLD-177
+  - 🇳🇱NL_14|2.9MB/s-178
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国-179
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本-180
+  - 🇺🇸 美国|@ripaojiedian-181
+  - 🇨🇳 台湾|@ripaojiedian-182
+  - 🇳🇱NL_15|1.1MB/s-183
+  - 🇯🇵 日本|@ripaojiedian-184
+  - 🇭🇰 香港2|@ripaojiedian-185
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国-186
+  - 🇩🇪DE_2|4.3MB/s-187
+  - 🇨🇱 智利 | CHL-188
+  - 🇩🇪 德国 | DEU 7-189
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国-190
+  - 🇸🇬 新加坡 | SGP-191
+  - 🇫🇷_FR_法国_5-192
+  - 🇵🇱 波兰 | POL 2-193
+  - 🇭🇰_HK_中国香港_1-194
+  - 🇮🇱IL_1|1.4MB/s-195
+  - 🇨🇱 智利 | CHL 2-196
+  - 🇩🇪 德国 | DEU 6-197
+  - 'tg频道:@ripaojiedian #1-198'
+  - 🇪🇸 西班牙 | ESP-199
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+rules:
+- GEOIP,CN,DIRECT
+- MATCH,🚀 Proxy
