@@ -1,0 +1,2240 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "8.8.8.8"
+      },
+      {
+        "tag": "local",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "local"
+      },
+      {
+        "clash_mode": "direct",
+        "server": "local"
+      },
+      {
+        "clash_mode": "global",
+        "server": "google"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 7890
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "proxy",
+      "outbounds": [
+        "auto",
+        "🌐 🇺🇸US-88.216.254.18-0614-0",
+        "🌐 🇺🇸US-156.146.38.169-0084-1",
+        "🌐 🇺🇸US-156.146.38.167-0089-2",
+        "🌐 🇺🇸US-216.106.178.169-0135-3",
+        "🌐 🇨🇦CA-216.152.147.79-0211-4",
+        "🌐 🇺🇸US-38.128.66.32-0134-5",
+        "🌐 🇺🇸US-156.146.38.168-0081-6",
+        "🌐 🇨🇦CA-216.152.147.152-0214-7",
+        "🌐 🇺🇸US-156.146.38.170-0085-8",
+        "🌐 🇺🇸US-38.60.157.143-0226-9",
+        "🌐 🇺🇸US-66.163.114.114-0275-10",
+        "🌐 🇨🇦CA-137.184.174.93-0170-11",
+        "🌐 🇺🇸US-185.230.230.18-0077-12",
+        "🌐 🇺🇸US-37.19.198.243-0130-13",
+        "🌐 🇺🇸US-37.19.198.244-0140-14",
+        "🌐 🇺🇸US-38.91.100.39-0168-15",
+        "🌐 🇺🇸US-66.163.114.132-0276-16",
+        "🌐 🇺🇸US-167.88.62.203-0177-17",
+        "🌐 🇺🇸US-37.19.198.160-0127-18",
+        "🌐 🇺🇸US-37.19.198.236-0121-19",
+        "🌐 🇨🇦CA-216.152.147.201-2492-20",
+        "🌐 🇺🇸US-38.121.43.18-0129-21",
+        "🌐 🇺🇸US-38.121.43.225-0133-22",
+        "🌐 🇺🇸US-38.22.17.129-0128-23",
+        "🌐 🇨🇦CA-51.79.64.198-0431-24",
+        "🌐 🇺🇸US-38.121.43.231-0126-25",
+        "🌐 🇺🇸US-38.22.17.219-0203-26",
+        "🌐 🇨🇦CA-51.222.136.236-0247-27",
+        "🌐 🇨🇦CA-216.152.147.93-0219-28",
+        "🌐 🇨🇦CA-51.222.155.113-0250-29",
+        "🌐 🇺🇸US-167.88.63.99-0141-30",
+        "🌐 🇺🇸US-170.101.101.67-0241-31",
+        "🌐 🇺🇸US-172.111.38.72-0144-32",
+        "🌐 🇨🇦CA-216.152.147.74-0212-33",
+        "🌐 🇺🇸US-193.151.163.18-0078-34",
+        "🌐 🇺🇸US-38.91.107.188-2467-35",
+        "🌐 🇺🇸US-198.98.53.130-0079-36",
+        "🌐 🇺🇸US-137.184.89.151-0167-37",
+        "🌐 🇺🇸US-15.204.247.206-5380-38",
+        "🌐 🇺🇸US-172.111.36.123-0118-39",
+        "🌐 🇺🇸US-45.86.51.18-0080-40",
+        "🌐 🇨🇦CA-51.222.141.125-0425-41",
+        "🌐 🇨🇦CA-51.222.200.165-0245-42",
+        "🌐 🇺🇸US-66.163.112.121-0159-43",
+        "🌐 🇺🇸US-193.151.160.9-0083-44",
+        "🌐 🇺🇸US-149.40.57.133-0142-45",
+        "🌐 🇺🇸US-23.150.152.38-0155-46",
+        "🌐 🇺🇸US-149.40.57.138-0156-47",
+        "🌐 🇺🇸US-193.151.160.18-0082-48",
+        "🌐 🇺🇸US-138.197.89.234-0143-49",
+        "🌐 🇺🇸US-169.197.140.218-0132-50",
+        "🌐 🇺🇸US-66.163.112.13-0182-51",
+        "🌐 🇺🇸US-216.106.186.33-0232-52",
+        "🌐 🇺🇸US-162.251.62.31-0148-53",
+        "🌐 🇺🇸US-167.88.61.175-0139-54",
+        "🌐 🇺🇸US-169.197.142.68-0123-55",
+        "🌐 🇺🇸US-173.244.56.9-0146-56",
+        "🌐 🇺🇸US-95.215.201.18-0160-57",
+        "🌐 🇲🇽MX-64.177.90.30-0216-58",
+        "🌐 🇺🇸US-173.244.56.6-0122-59",
+        "🌐 🇨🇦CA-149.22.95.183-0172-60",
+        "🌐 🇬🇧GB-198.244.201.129-0225-61",
+        "🌐 🇬🇧GB-198.244.202.215-0189-62",
+        "🌐 🇪🇸ES-5.188.181.201-5302-63",
+        "🌐 🇪🇸ES-5.188.181.201-0238-64",
+        "🌐 🇪🇸ES-5.188.181.201-5301-65",
+        "🌐 🇪🇸ES-5.188.181.201-5312-66",
+        "🌐 🇪🇸ES-5.188.181.201-0237-67",
+        "🌐 🇪🇸ES-5.188.181.201-0223-68",
+        "🌐 🇪🇸ES-5.188.181.201-5306-69",
+        "🌐 🇪🇸ES-5.188.181.201-0236-70",
+        "🌐 🇪🇸ES-5.188.181.201-5303-71",
+        "🌐 🇪🇸ES-5.188.181.201-0240-72",
+        "🌐 🇪🇸ES-5.188.181.201-5300-73",
+        "🌐 🇬🇧GB-158.173.24.73-0457-74",
+        "🌐 🇪🇸ES-5.188.181.201-0239-75",
+        "🌐 🇪🇸ES-5.188.181.201-5304-76",
+        "🌐 🇬🇧GB-94.156.250.148-0458-77",
+        "🌐 🇪🇸ES-5.188.181.201-0234-78",
+        "🌐 🇪🇸ES-5.188.181.201-5299-79",
+        "🌐 🇦🇪AE-151.241.19.29-0088-80",
+        "🌐 🇩🇪DE-193.108.119.15-0175-81",
+        "🌐 🇬🇧GB-141.98.101.181-0194-82",
+        "🌐 🇬🇧GB-185.176.206.9-0086-83",
+        "🌐 🇳🇱NL-193.29.139.223-5361-84",
+        "🌐 🇬🇧GB-38.114.120.221-0207-85",
+        "🌐 🇬🇧GB-82.38.31.189-5319-86",
+        "🌐 🇬🇧GB-82.38.31.207-0090-87",
+        "🌐 🇬🇧GB-82.38.31.49-0185-88",
+        "🌐 🇳🇱NL-109.201.152.181-0169-90",
+        "🌐 🇦🇪AE-151.241.19.36-0087-91",
+        "🌐 🇬🇧GB-82.38.31.219-0252-92",
+        "🌐 🇬🇧GB-142.202.51.22-0224-93",
+        "🌐 🇬🇧GB-82.38.31.180-0106-94",
+        "🌐 🇬🇧GB-82.38.31.181-0107-95",
+        "🌐 🇬🇧GB-82.38.31.187-0116-96",
+        "🌐 🇬🇧GB-82.38.31.205-0104-97",
+        "🌐 🇬🇧GB-82.38.31.61-0187-98",
+        "🌐 🇫🇷FR-167.17.64.22-0154-99",
+        "🌐 🇪🇸ES-167.17.71.167-0249-100",
+        "🌐 🇳🇱NL-193.29.139.147-0124-101",
+        "🌐 🇩🇪DE-23.157.88.43-0145-102",
+        "🌐 🇫🇷FR-23.162.152.22-0153-103",
+        "🌐 🇬🇧GB-82.38.31.184-0109-104",
+        "🌐 🇬🇧GB-82.38.31.193-0110-105",
+        "🌐 🇬🇧GB-82.38.31.35-0202-106",
+        "🌐 🇬🇧GB-82.38.31.62-0188-107",
+        "🌐 🇳🇱NL-193.29.139.168-0125-108",
+        "🌐 🇬🇧GB-82.38.31.171-0191-109",
+        "🌐 🇬🇧GB-82.38.31.202-0100-110",
+        "🌐 🇬🇧GB-82.38.31.203-0094-111",
+        "🌐 🇫🇷FR-172.99.189.142-0151-112",
+        "🌐 🇮🇹IT-202.50.253.54-0174-113",
+        "🌐 🇬🇧GB-82.38.31.162-0199-114",
+        "🌐 🇬🇧GB-82.38.31.171-0190-115",
+        "🌐 🇬🇧GB-82.38.31.186-0105-116",
+        "🌐 🇬🇧GB-82.38.31.212-0119-117",
+        "🌐 🇬🇧GB-82.38.31.218-0251-118",
+        "🌐 🇬🇧GB-82.38.31.47-0192-119",
+        "🌐 🇬🇧GB-82.38.31.48-0195-120",
+        "🌐 🇫🇷FR-167.17.64.27-0205-121",
+        "🌐 🇩🇪DE-193.108.119.2-0149-122",
+        "🌐 🇩🇪DE-193.108.119.29-0108-123",
+        "🌐 🇬🇧GB-82.38.31.208-0091-124",
+        "🌐 🇬🇧GB-82.38.31.216-0099-125",
+        "🌐 🇬🇧GB-82.38.31.217-0097-126",
+        "🌐 🇫🇷FR-38.109.228.110-0158-127",
+        "🌐 🇬🇧GB-82.38.31.191-0095-128",
+        "🌐 🇬🇧GB-82.38.31.192-0114-129",
+        "🌐 🇬🇧GB-82.38.31.210-0092-130",
+        "🌐 🇩🇪DE-193.108.119.193-2505-131",
+        "🌐 🇸🇪SE-70.34.207.14-0098-132",
+        "🌐 🇬🇧GB-82.38.31.159-0186-133",
+        "🌐 🇬🇧GB-82.38.31.190-5327-134",
+        "🌐 🇬🇧GB-82.38.31.214-0102-135",
+        "🌐 🇩🇪DE-193.108.119.96-0111-136",
+        "🌐 🇬🇧GB-82.38.31.176-0228-137",
+        "🌐 🇬🇧GB-82.38.31.206-0112-138",
+        "🌐 🇬🇧GB-178.83.185.156-0193-139",
+        "🌐 🇵🇱PL-70.34.252.255-0120-140",
+        "🌐 🇬🇧GB-82.38.31.170-0198-141",
+        "🌐 🇬🇧GB-82.38.31.179-0093-142",
+        "🌐 🇬🇧GB-82.38.31.194-0115-143",
+        "🌐 🇫🇷FR-167.17.64.175-0206-144",
+        "🌐 🇩🇪DE-193.108.119.3-0131-145",
+        "🌐 🇪🇸ES-66.163.118.103-0171-146",
+        "🌐 🇬🇧GB-82.38.31.66-0197-147",
+        "🌐 🇬🇧GB-82.38.31.46-0210-148",
+        "🌐 🇮🇹IT-149.50.215.234-2429-149",
+        "🌐 🇺🇦UA-185.164.175.81-0101-150",
+        "🌐 🇩🇪DE-185.176.204.18-0166-151",
+        "🌐 🇳🇴NO-185.213.23.63-0253-152",
+        "🌐 🇨🇭CH-79.127.184.104-0164-153",
+        "🌐 🇸🇪SE-138.199.55.243-0152-154",
+        "🌐 🇩🇪DE-57.129.83.85-0209-155",
+        "🌐 🇨🇱CL-64.176.7.205-0200-156",
+        "🌐 🇬🇧GB-82.110.60.9-0113-157",
+        "🌐 🇨🇭CH-186.190.215.251-0173-158",
+        "🌐 🇮🇹IT-202.50.253.81-0421-159",
+        "🌐 🇯🇵JP-149.22.87.241-0180-160",
+        "🌐 🇨🇭CH-23.166.88.127-0161-161",
+        "🌐 🇯🇵JP-149.22.87.204-0178-162",
+        "🌐 🇯🇵JP-149.22.87.240-0179-163",
+        "🌐 🇦🇹AT-152.53.1.57-0266-164",
+        "🌐 🇪🇸ES-79.127.139.242-0184-165",
+        "🌐 🇫🇷FR-54.36.174.134-0258-166",
+        "🌐 🇫🇷FR-54.36.174.140-0233-167",
+        "🌐 🇫🇷FR-54.36.174.140-0229-168",
+        "🌐 🇨🇭CH-208.69.78.33-0523-169",
+        "🌐 🇺🇸US-84.20.27.183-0117-170",
+        "🌐 🇮🇹IT-202.50.253.18-0162-171",
+        "🌐 🇮🇹IT-202.50.253.99-0150-172",
+        "🌐 🇮🇹IT-202.50.253.36-0136-173",
+        "🌐 🇮🇹IT-202.50.253.45-0222-174",
+        "🌐 🇮🇹IT-202.50.253.90-0103-175",
+        "🌐 🇮🇹IT-202.50.253.72-0137-176",
+        "🌐 🇮🇹IT-202.50.253.63-0196-177",
+        "🌐 🇧🇷BR-216.238.104.154-0176-178",
+        "🌐 🇯🇵JP-84.247.155.196-0246-179",
+        "🌐 🇯🇵JP-84.247.155.196-0242-180",
+        "🌐 🇦🇺AU-45.63.30.142-0221-181",
+        "🌐 🇸🇬SG-15.235.164.133-0208-182",
+        "🌐 🇸🇬SG-51.79.228.131-0204-183",
+        "🌐 🇸🇬SG-68.183.227.4-0181-184",
+        "🌐 🇸🇬SG-149.28.130.108-0138-185",
+        "🌐 🇸🇬SG-149.88.106.74-0163-186",
+        "🌐 🇸🇬SG-15.235.182.183-0201-187",
+        "🌐 🇸🇬SG-149.88.107.74-0147-188",
+        "🌐 🇸🇬SG-149.88.107.47-0165-189",
+        "🌐 🇫🇷FR-54.37.131.126-0244-190",
+        "🌐 🇹🇭TH-38.60.233.126-0227-191",
+        "🌐 🇵🇭PH-130.94.51.219-0235-192",
+        "🌐 🇿🇦ZA-102.133.165.160-0218-193",
+        "🌐 🇿🇦ZA-102.37.156.224-0215-194",
+        "🌐 🇳🇱 荷兰 | NLD 5-195",
+        "🌐 🏳[www.v2nodes.com] vless- #2-196",
+        "🌐 🇯🇵[www.v2nodes.com] vless-JP-1... #7-197",
+        "🌐 🇩🇪[www.v2nodes.com] vless-DE-1... #4-198",
+        "🌐 🏳[www.v2nodes.com] vless- #26-199"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🌐 🇺🇸US-88.216.254.18-0614-0",
+        "🌐 🇺🇸US-156.146.38.169-0084-1",
+        "🌐 🇺🇸US-156.146.38.167-0089-2",
+        "🌐 🇺🇸US-216.106.178.169-0135-3",
+        "🌐 🇨🇦CA-216.152.147.79-0211-4",
+        "🌐 🇺🇸US-38.128.66.32-0134-5",
+        "🌐 🇺🇸US-156.146.38.168-0081-6",
+        "🌐 🇨🇦CA-216.152.147.152-0214-7",
+        "🌐 🇺🇸US-156.146.38.170-0085-8",
+        "🌐 🇺🇸US-38.60.157.143-0226-9",
+        "🌐 🇺🇸US-66.163.114.114-0275-10",
+        "🌐 🇨🇦CA-137.184.174.93-0170-11",
+        "🌐 🇺🇸US-185.230.230.18-0077-12",
+        "🌐 🇺🇸US-37.19.198.243-0130-13",
+        "🌐 🇺🇸US-37.19.198.244-0140-14",
+        "🌐 🇺🇸US-38.91.100.39-0168-15",
+        "🌐 🇺🇸US-66.163.114.132-0276-16",
+        "🌐 🇺🇸US-167.88.62.203-0177-17",
+        "🌐 🇺🇸US-37.19.198.160-0127-18",
+        "🌐 🇺🇸US-37.19.198.236-0121-19",
+        "🌐 🇨🇦CA-216.152.147.201-2492-20",
+        "🌐 🇺🇸US-38.121.43.18-0129-21",
+        "🌐 🇺🇸US-38.121.43.225-0133-22",
+        "🌐 🇺🇸US-38.22.17.129-0128-23",
+        "🌐 🇨🇦CA-51.79.64.198-0431-24",
+        "🌐 🇺🇸US-38.121.43.231-0126-25",
+        "🌐 🇺🇸US-38.22.17.219-0203-26",
+        "🌐 🇨🇦CA-51.222.136.236-0247-27",
+        "🌐 🇨🇦CA-216.152.147.93-0219-28",
+        "🌐 🇨🇦CA-51.222.155.113-0250-29",
+        "🌐 🇺🇸US-167.88.63.99-0141-30",
+        "🌐 🇺🇸US-170.101.101.67-0241-31",
+        "🌐 🇺🇸US-172.111.38.72-0144-32",
+        "🌐 🇨🇦CA-216.152.147.74-0212-33",
+        "🌐 🇺🇸US-193.151.163.18-0078-34",
+        "🌐 🇺🇸US-38.91.107.188-2467-35",
+        "🌐 🇺🇸US-198.98.53.130-0079-36",
+        "🌐 🇺🇸US-137.184.89.151-0167-37",
+        "🌐 🇺🇸US-15.204.247.206-5380-38",
+        "🌐 🇺🇸US-172.111.36.123-0118-39",
+        "🌐 🇺🇸US-45.86.51.18-0080-40",
+        "🌐 🇨🇦CA-51.222.141.125-0425-41",
+        "🌐 🇨🇦CA-51.222.200.165-0245-42",
+        "🌐 🇺🇸US-66.163.112.121-0159-43",
+        "🌐 🇺🇸US-193.151.160.9-0083-44",
+        "🌐 🇺🇸US-149.40.57.133-0142-45",
+        "🌐 🇺🇸US-23.150.152.38-0155-46",
+        "🌐 🇺🇸US-149.40.57.138-0156-47",
+        "🌐 🇺🇸US-193.151.160.18-0082-48",
+        "🌐 🇺🇸US-138.197.89.234-0143-49",
+        "🌐 🇺🇸US-169.197.140.218-0132-50",
+        "🌐 🇺🇸US-66.163.112.13-0182-51",
+        "🌐 🇺🇸US-216.106.186.33-0232-52",
+        "🌐 🇺🇸US-162.251.62.31-0148-53",
+        "🌐 🇺🇸US-167.88.61.175-0139-54",
+        "🌐 🇺🇸US-169.197.142.68-0123-55",
+        "🌐 🇺🇸US-173.244.56.9-0146-56",
+        "🌐 🇺🇸US-95.215.201.18-0160-57",
+        "🌐 🇲🇽MX-64.177.90.30-0216-58",
+        "🌐 🇺🇸US-173.244.56.6-0122-59",
+        "🌐 🇨🇦CA-149.22.95.183-0172-60",
+        "🌐 🇬🇧GB-198.244.201.129-0225-61",
+        "🌐 🇬🇧GB-198.244.202.215-0189-62",
+        "🌐 🇪🇸ES-5.188.181.201-5302-63",
+        "🌐 🇪🇸ES-5.188.181.201-0238-64",
+        "🌐 🇪🇸ES-5.188.181.201-5301-65",
+        "🌐 🇪🇸ES-5.188.181.201-5312-66",
+        "🌐 🇪🇸ES-5.188.181.201-0237-67",
+        "🌐 🇪🇸ES-5.188.181.201-0223-68",
+        "🌐 🇪🇸ES-5.188.181.201-5306-69",
+        "🌐 🇪🇸ES-5.188.181.201-0236-70",
+        "🌐 🇪🇸ES-5.188.181.201-5303-71",
+        "🌐 🇪🇸ES-5.188.181.201-0240-72",
+        "🌐 🇪🇸ES-5.188.181.201-5300-73",
+        "🌐 🇬🇧GB-158.173.24.73-0457-74",
+        "🌐 🇪🇸ES-5.188.181.201-0239-75",
+        "🌐 🇪🇸ES-5.188.181.201-5304-76",
+        "🌐 🇬🇧GB-94.156.250.148-0458-77",
+        "🌐 🇪🇸ES-5.188.181.201-0234-78",
+        "🌐 🇪🇸ES-5.188.181.201-5299-79",
+        "🌐 🇦🇪AE-151.241.19.29-0088-80",
+        "🌐 🇩🇪DE-193.108.119.15-0175-81",
+        "🌐 🇬🇧GB-141.98.101.181-0194-82",
+        "🌐 🇬🇧GB-185.176.206.9-0086-83",
+        "🌐 🇳🇱NL-193.29.139.223-5361-84",
+        "🌐 🇬🇧GB-38.114.120.221-0207-85",
+        "🌐 🇬🇧GB-82.38.31.189-5319-86",
+        "🌐 🇬🇧GB-82.38.31.207-0090-87",
+        "🌐 🇬🇧GB-82.38.31.49-0185-88",
+        "🌐 🇳🇱NL-109.201.152.181-0169-90",
+        "🌐 🇦🇪AE-151.241.19.36-0087-91",
+        "🌐 🇬🇧GB-82.38.31.219-0252-92",
+        "🌐 🇬🇧GB-142.202.51.22-0224-93",
+        "🌐 🇬🇧GB-82.38.31.180-0106-94",
+        "🌐 🇬🇧GB-82.38.31.181-0107-95",
+        "🌐 🇬🇧GB-82.38.31.187-0116-96",
+        "🌐 🇬🇧GB-82.38.31.205-0104-97",
+        "🌐 🇬🇧GB-82.38.31.61-0187-98",
+        "🌐 🇫🇷FR-167.17.64.22-0154-99",
+        "🌐 🇪🇸ES-167.17.71.167-0249-100",
+        "🌐 🇳🇱NL-193.29.139.147-0124-101",
+        "🌐 🇩🇪DE-23.157.88.43-0145-102",
+        "🌐 🇫🇷FR-23.162.152.22-0153-103",
+        "🌐 🇬🇧GB-82.38.31.184-0109-104",
+        "🌐 🇬🇧GB-82.38.31.193-0110-105",
+        "🌐 🇬🇧GB-82.38.31.35-0202-106",
+        "🌐 🇬🇧GB-82.38.31.62-0188-107",
+        "🌐 🇳🇱NL-193.29.139.168-0125-108",
+        "🌐 🇬🇧GB-82.38.31.171-0191-109",
+        "🌐 🇬🇧GB-82.38.31.202-0100-110",
+        "🌐 🇬🇧GB-82.38.31.203-0094-111",
+        "🌐 🇫🇷FR-172.99.189.142-0151-112",
+        "🌐 🇮🇹IT-202.50.253.54-0174-113",
+        "🌐 🇬🇧GB-82.38.31.162-0199-114",
+        "🌐 🇬🇧GB-82.38.31.171-0190-115",
+        "🌐 🇬🇧GB-82.38.31.186-0105-116",
+        "🌐 🇬🇧GB-82.38.31.212-0119-117",
+        "🌐 🇬🇧GB-82.38.31.218-0251-118",
+        "🌐 🇬🇧GB-82.38.31.47-0192-119",
+        "🌐 🇬🇧GB-82.38.31.48-0195-120",
+        "🌐 🇫🇷FR-167.17.64.27-0205-121",
+        "🌐 🇩🇪DE-193.108.119.2-0149-122",
+        "🌐 🇩🇪DE-193.108.119.29-0108-123",
+        "🌐 🇬🇧GB-82.38.31.208-0091-124",
+        "🌐 🇬🇧GB-82.38.31.216-0099-125",
+        "🌐 🇬🇧GB-82.38.31.217-0097-126",
+        "🌐 🇫🇷FR-38.109.228.110-0158-127",
+        "🌐 🇬🇧GB-82.38.31.191-0095-128",
+        "🌐 🇬🇧GB-82.38.31.192-0114-129",
+        "🌐 🇬🇧GB-82.38.31.210-0092-130",
+        "🌐 🇩🇪DE-193.108.119.193-2505-131",
+        "🌐 🇸🇪SE-70.34.207.14-0098-132",
+        "🌐 🇬🇧GB-82.38.31.159-0186-133",
+        "🌐 🇬🇧GB-82.38.31.190-5327-134",
+        "🌐 🇬🇧GB-82.38.31.214-0102-135",
+        "🌐 🇩🇪DE-193.108.119.96-0111-136",
+        "🌐 🇬🇧GB-82.38.31.176-0228-137",
+        "🌐 🇬🇧GB-82.38.31.206-0112-138",
+        "🌐 🇬🇧GB-178.83.185.156-0193-139",
+        "🌐 🇵🇱PL-70.34.252.255-0120-140",
+        "🌐 🇬🇧GB-82.38.31.170-0198-141",
+        "🌐 🇬🇧GB-82.38.31.179-0093-142",
+        "🌐 🇬🇧GB-82.38.31.194-0115-143",
+        "🌐 🇫🇷FR-167.17.64.175-0206-144",
+        "🌐 🇩🇪DE-193.108.119.3-0131-145",
+        "🌐 🇪🇸ES-66.163.118.103-0171-146",
+        "🌐 🇬🇧GB-82.38.31.66-0197-147",
+        "🌐 🇬🇧GB-82.38.31.46-0210-148",
+        "🌐 🇮🇹IT-149.50.215.234-2429-149",
+        "🌐 🇺🇦UA-185.164.175.81-0101-150",
+        "🌐 🇩🇪DE-185.176.204.18-0166-151",
+        "🌐 🇳🇴NO-185.213.23.63-0253-152",
+        "🌐 🇨🇭CH-79.127.184.104-0164-153",
+        "🌐 🇸🇪SE-138.199.55.243-0152-154",
+        "🌐 🇩🇪DE-57.129.83.85-0209-155",
+        "🌐 🇨🇱CL-64.176.7.205-0200-156",
+        "🌐 🇬🇧GB-82.110.60.9-0113-157",
+        "🌐 🇨🇭CH-186.190.215.251-0173-158",
+        "🌐 🇮🇹IT-202.50.253.81-0421-159",
+        "🌐 🇯🇵JP-149.22.87.241-0180-160",
+        "🌐 🇨🇭CH-23.166.88.127-0161-161",
+        "🌐 🇯🇵JP-149.22.87.204-0178-162",
+        "🌐 🇯🇵JP-149.22.87.240-0179-163",
+        "🌐 🇦🇹AT-152.53.1.57-0266-164",
+        "🌐 🇪🇸ES-79.127.139.242-0184-165",
+        "🌐 🇫🇷FR-54.36.174.134-0258-166",
+        "🌐 🇫🇷FR-54.36.174.140-0233-167",
+        "🌐 🇫🇷FR-54.36.174.140-0229-168",
+        "🌐 🇨🇭CH-208.69.78.33-0523-169",
+        "🌐 🇺🇸US-84.20.27.183-0117-170",
+        "🌐 🇮🇹IT-202.50.253.18-0162-171",
+        "🌐 🇮🇹IT-202.50.253.99-0150-172",
+        "🌐 🇮🇹IT-202.50.253.36-0136-173",
+        "🌐 🇮🇹IT-202.50.253.45-0222-174",
+        "🌐 🇮🇹IT-202.50.253.90-0103-175",
+        "🌐 🇮🇹IT-202.50.253.72-0137-176",
+        "🌐 🇮🇹IT-202.50.253.63-0196-177",
+        "🌐 🇧🇷BR-216.238.104.154-0176-178",
+        "🌐 🇯🇵JP-84.247.155.196-0246-179",
+        "🌐 🇯🇵JP-84.247.155.196-0242-180",
+        "🌐 🇦🇺AU-45.63.30.142-0221-181",
+        "🌐 🇸🇬SG-15.235.164.133-0208-182",
+        "🌐 🇸🇬SG-51.79.228.131-0204-183",
+        "🌐 🇸🇬SG-68.183.227.4-0181-184",
+        "🌐 🇸🇬SG-149.28.130.108-0138-185",
+        "🌐 🇸🇬SG-149.88.106.74-0163-186",
+        "🌐 🇸🇬SG-15.235.182.183-0201-187",
+        "🌐 🇸🇬SG-149.88.107.74-0147-188",
+        "🌐 🇸🇬SG-149.88.107.47-0165-189",
+        "🌐 🇫🇷FR-54.37.131.126-0244-190",
+        "🌐 🇹🇭TH-38.60.233.126-0227-191",
+        "🌐 🇵🇭PH-130.94.51.219-0235-192",
+        "🌐 🇿🇦ZA-102.133.165.160-0218-193",
+        "🌐 🇿🇦ZA-102.37.156.224-0215-194",
+        "🌐 🇳🇱 荷兰 | NLD 5-195",
+        "🌐 🏳[www.v2nodes.com] vless- #2-196",
+        "🌐 🇯🇵[www.v2nodes.com] vless-JP-1... #7-197",
+        "🌐 🇩🇪[www.v2nodes.com] vless-DE-1... #4-198",
+        "🌐 🏳[www.v2nodes.com] vless- #26-199"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-88.216.254.18-0614-0",
+      "server": "88.216.254.18",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-156.146.38.169-0084-1",
+      "server": "156.146.38.169",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-156.146.38.167-0089-2",
+      "server": "156.146.38.167",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-216.106.178.169-0135-3",
+      "server": "216.106.178.169",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇨🇦CA-216.152.147.79-0211-4",
+      "server": "216.152.147.79",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "blog.connectingpeoplewithgreatjobs.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-38.128.66.32-0134-5",
+      "server": "38.128.66.32",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-156.146.38.168-0081-6",
+      "server": "156.146.38.168",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇨🇦CA-216.152.147.152-0214-7",
+      "server": "216.152.147.152",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.connectingpeoplewithgreatjobs.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-156.146.38.170-0085-8",
+      "server": "156.146.38.170",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-38.60.157.143-0226-9",
+      "server": "us001.zestapp778.com",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "us001.zestapp778.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-66.163.114.114-0275-10",
+      "server": "66.163.114.114",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.findconnectwithemployersandbuildprofessionalnetwork.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇦CA-137.184.174.93-0170-11",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-185.230.230.18-0077-12",
+      "server": "185.230.230.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-37.19.198.243-0130-13",
+      "server": "37.19.198.243",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-37.19.198.244-0140-14",
+      "server": "37.19.198.244",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-38.91.100.39-0168-15",
+      "server": "38.91.100.39",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-66.163.114.132-0276-16",
+      "server": "66.163.114.132",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.findconnectwithemployersandbuildprofessionalnetwork.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-167.88.62.203-0177-17",
+      "server": "167.88.62.203",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-37.19.198.160-0127-18",
+      "server": "37.19.198.160",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-37.19.198.236-0121-19",
+      "server": "37.19.198.236",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇨🇦CA-216.152.147.201-2492-20",
+      "server": "216.152.147.201",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.connectingpeoplewithgreatjobs.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-38.121.43.18-0129-21",
+      "server": "38.121.43.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-38.121.43.225-0133-22",
+      "server": "38.121.43.225",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-38.22.17.129-0128-23",
+      "server": "38.22.17.129",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇦CA-51.79.64.198-0431-24",
+      "server": "51.79.64.198",
+      "server_port": 8119,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-38.121.43.231-0126-25",
+      "server": "38.121.43.231",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-38.22.17.219-0203-26",
+      "server": "38.22.17.219",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇦CA-51.222.136.236-0247-27",
+      "server": "51.222.136.236",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇨🇦CA-216.152.147.93-0219-28",
+      "server": "216.152.147.93",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectingpeoplewithgreatjobs.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇦CA-51.222.155.113-0250-29",
+      "server": "51.222.155.113",
+      "server_port": 5601,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-167.88.63.99-0141-30",
+      "server": "167.88.63.99",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-170.101.101.67-0241-31",
+      "server": "170.101.101.67",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.explorecreativejobsandenhanceyourcareerportfolio.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-172.111.38.72-0144-32",
+      "server": "172.111.38.72",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇨🇦CA-216.152.147.74-0212-33",
+      "server": "216.152.147.74",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.connectingpeoplewithgreatjobs.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-193.151.163.18-0078-34",
+      "server": "193.151.163.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-38.91.107.188-2467-35",
+      "server": "38.91.107.188",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-198.98.53.130-0079-36",
+      "server": "198.98.53.130",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "eDfN7SODQceIOmIAbtJJtK"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-137.184.89.151-0167-37",
+      "server": "137.184.89.151",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-15.204.247.206-5380-38",
+      "server": "15.204.247.206",
+      "server_port": 4444,
+      "method": "aes-256-gcm",
+      "password": "pKEW8JPByTVTLtM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-172.111.36.123-0118-39",
+      "server": "172.111.36.123",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-45.86.51.18-0080-40",
+      "server": "45.86.51.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇦CA-51.222.141.125-0425-41",
+      "server": "51.222.141.125",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇦CA-51.222.200.165-0245-42",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-66.163.112.121-0159-43",
+      "server": "66.163.112.121",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.unlockyourfuturefindyourperfectcareer.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-193.151.160.9-0083-44",
+      "server": "193.151.160.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-149.40.57.133-0142-45",
+      "server": "149.40.57.133",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-23.150.152.38-0155-46",
+      "server": "23.150.152.38",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-149.40.57.138-0156-47",
+      "server": "149.40.57.138",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-193.151.160.18-0082-48",
+      "server": "193.151.160.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-138.197.89.234-0143-49",
+      "server": "138.197.89.234",
+      "server_port": 28960,
+      "method": "chacha20-ietf-poly1305",
+      "password": "DZRy4Q3QH0jUGfKFl2jDCZ"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-169.197.140.218-0132-50",
+      "server": "169.197.140.218",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-66.163.112.13-0182-51",
+      "server": "66.163.112.13",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "blog.unlockyourfuturefindyourperfectcareer.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-216.106.186.33-0232-52",
+      "server": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
+      "server_port": 443,
+      "password": "f0eb8c92ce8946aaba856569cff1a16b",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-162.251.62.31-0148-53",
+      "server": "162.251.62.31",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇺🇸US-167.88.61.175-0139-54",
+      "server": "167.88.61.175",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "blog.browseseniorrolesandenhanceyourcareertoday.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-169.197.142.68-0123-55",
+      "server": "169.197.142.68",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-173.244.56.9-0146-56",
+      "server": "173.244.56.9",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-95.215.201.18-0160-57",
+      "server": "95.215.201.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇲🇽MX-64.177.90.30-0216-58",
+      "server": "64.177.90.30",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BWyPPTusFKhGgzKh"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-173.244.56.6-0122-59",
+      "server": "173.244.56.6",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇦CA-149.22.95.183-0172-60",
+      "server": "149.22.95.183",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-198.244.201.129-0225-61",
+      "server": "198.244.201.129",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-198.244.202.215-0189-62",
+      "server": "198.244.202.215",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-5302-63",
+      "server": "5.188.181.201",
+      "server_port": 9014,
+      "method": "aes-256-cfb",
+      "password": "KnJGad3FqTvjqbaX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-0238-64",
+      "server": "5.188.181.201",
+      "server_port": 9041,
+      "method": "aes-256-cfb",
+      "password": "U6qnYRhfyDmn8sgn"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-5301-65",
+      "server": "5.188.181.201",
+      "server_port": 9027,
+      "method": "aes-256-cfb",
+      "password": "EXN3S3eQpjE7EJu8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-5312-66",
+      "server": "5.188.181.201",
+      "server_port": 9005,
+      "method": "aes-256-cfb",
+      "password": "ZET59LF6DvCC8KVt"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-0237-67",
+      "server": "5.188.181.201",
+      "server_port": 9042,
+      "method": "aes-256-cfb",
+      "password": "S7KwUu7yBy58S3Ga"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-0223-68",
+      "server": "5.188.181.201",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-5306-69",
+      "server": "5.188.181.201",
+      "server_port": 9019,
+      "method": "aes-256-cfb",
+      "password": "GA9KzeEgvfxNrgmM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-0236-70",
+      "server": "5.188.181.201",
+      "server_port": 9037,
+      "method": "aes-256-cfb",
+      "password": "TN2YqghxeFDKZfLU"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-5303-71",
+      "server": "5.188.181.201",
+      "server_port": 9029,
+      "method": "aes-256-cfb",
+      "password": "dU3DSNS8wYPXzEKw"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-0240-72",
+      "server": "5.188.181.201",
+      "server_port": 9031,
+      "method": "aes-256-cfb",
+      "password": "BwcAUZk8hUFAkDGN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-5300-73",
+      "server": "5.188.181.201",
+      "server_port": 9025,
+      "method": "aes-256-cfb",
+      "password": "XPtzA9sCug3SPR4c"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-158.173.24.73-0457-74",
+      "server": "158.173.24.73",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-0239-75",
+      "server": "5.188.181.201",
+      "server_port": 9040,
+      "method": "aes-256-cfb",
+      "password": "p9z5BVADH2YFs3MN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-5304-76",
+      "server": "5.188.181.201",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-94.156.250.148-0458-77",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-0234-78",
+      "server": "5.188.181.201",
+      "server_port": 9030,
+      "method": "aes-256-cfb",
+      "password": "GeregetR8cvQHzYr"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-5.188.181.201-5299-79",
+      "server": "5.188.181.201",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇦🇪AE-151.241.19.29-0088-80",
+      "server": "151.241.19.29",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇩🇪DE-193.108.119.15-0175-81",
+      "server": "193.108.119.15",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.iloverussia2026.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-141.98.101.181-0194-82",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-185.176.206.9-0086-83",
+      "server": "185.176.206.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇳🇱NL-193.29.139.223-5361-84",
+      "server": "193.29.139.223",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-38.114.120.221-0207-85",
+      "server": "38.114.120.221",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.189-5319-86",
+      "server": "82.38.31.189",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.207-0090-87",
+      "server": "82.38.31.207",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.49-0185-88",
+      "server": "82.38.31.49",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇳🇱NL-109.201.152.181-0169-90",
+      "server": "109.201.152.181",
+      "server_port": 443,
+      "method": "aes-128-cfb",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇦🇪AE-151.241.19.36-0087-91",
+      "server": "151.241.19.36",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.219-0252-92",
+      "server": "82.38.31.219",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-142.202.51.22-0224-93",
+      "server": "142.202.51.22",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.180-0106-94",
+      "server": "82.38.31.180",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.181-0107-95",
+      "server": "82.38.31.181",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.187-0116-96",
+      "server": "82.38.31.187",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.205-0104-97",
+      "server": "82.38.31.205",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.61-0187-98",
+      "server": "82.38.31.61",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-167.17.64.22-0154-99",
+      "server": "167.17.64.22",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-167.17.71.167-0249-100",
+      "server": "167.17.71.167",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇳🇱NL-193.29.139.147-0124-101",
+      "server": "193.29.139.147",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇩🇪DE-23.157.88.43-0145-102",
+      "server": "23.157.88.43",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-23.162.152.22-0153-103",
+      "server": "23.162.152.22",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.184-0109-104",
+      "server": "82.38.31.184",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.193-0110-105",
+      "server": "82.38.31.193",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.35-0202-106",
+      "server": "82.38.31.35",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.62-0188-107",
+      "server": "82.38.31.62",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇳🇱NL-193.29.139.168-0125-108",
+      "server": "193.29.139.168",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QCXDxuDlTTMD7jtgHUjIoj"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.171-0191-109",
+      "server": "82.38.31.171",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.202-0100-110",
+      "server": "82.38.31.202",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.203-0094-111",
+      "server": "82.38.31.203",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-172.99.189.142-0151-112",
+      "server": "172.99.189.142",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.54-0174-113",
+      "server": "202.50.253.54",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.162-0199-114",
+      "server": "82.38.31.162",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.171-0190-115",
+      "server": "82.38.31.171",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.186-0105-116",
+      "server": "82.38.31.186",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.212-0119-117",
+      "server": "82.38.31.212",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.218-0251-118",
+      "server": "82.38.31.218",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.47-0192-119",
+      "server": "82.38.31.47",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.48-0195-120",
+      "server": "82.38.31.48",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-167.17.64.27-0205-121",
+      "server": "167.17.64.27",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇩🇪DE-193.108.119.2-0149-122",
+      "server": "193.108.119.2",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇩🇪DE-193.108.119.29-0108-123",
+      "server": "193.108.119.29",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "blog.iloverussia2026.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.208-0091-124",
+      "server": "82.38.31.208",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.216-0099-125",
+      "server": "82.38.31.216",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.217-0097-126",
+      "server": "82.38.31.217",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-38.109.228.110-0158-127",
+      "server": "38.109.228.110",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.191-0095-128",
+      "server": "82.38.31.191",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.192-0114-129",
+      "server": "82.38.31.192",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.210-0092-130",
+      "server": "82.38.31.210",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇩🇪DE-193.108.119.193-2505-131",
+      "server": "193.108.119.193",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.iloverussia2026.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇸🇪SE-70.34.207.14-0098-132",
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.159-0186-133",
+      "server": "82.38.31.159",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.190-5327-134",
+      "server": "82.38.31.190",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.214-0102-135",
+      "server": "82.38.31.214",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇩🇪DE-193.108.119.96-0111-136",
+      "server": "193.108.119.96",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.iloverussia2026.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.176-0228-137",
+      "server": "82.38.31.176",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.206-0112-138",
+      "server": "82.38.31.206",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-178.83.185.156-0193-139",
+      "server": "178.83.185.156",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇵🇱PL-70.34.252.255-0120-140",
+      "server": "70.34.252.255",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.170-0198-141",
+      "server": "82.38.31.170",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.179-0093-142",
+      "server": "82.38.31.179",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.194-0115-143",
+      "server": "82.38.31.194",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-167.17.64.175-0206-144",
+      "server": "167.17.64.175",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇩🇪DE-193.108.119.3-0131-145",
+      "server": "193.108.119.3",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-66.163.118.103-0171-146",
+      "server": "66.163.118.103",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.66-0197-147",
+      "server": "82.38.31.66",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.38.31.46-0210-148",
+      "server": "82.38.31.46",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-149.50.215.234-2429-149",
+      "server": "149.50.215.234",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇦UA-185.164.175.81-0101-150",
+      "server": "185.164.175.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇩🇪DE-185.176.204.18-0166-151",
+      "server": "185.176.204.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇳🇴NO-185.213.23.63-0253-152",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇭CH-79.127.184.104-0164-153",
+      "server": "79.127.184.104",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇸🇪SE-138.199.55.243-0152-154",
+      "server": "138.199.55.243",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇩🇪DE-57.129.83.85-0209-155",
+      "server": "57.129.83.85",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇨🇱CL-64.176.7.205-0200-156",
+      "server": "64.176.7.205",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "advanceyouremploymentskillsandcareerdevelopmenthub.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇬🇧GB-82.110.60.9-0113-157",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇭CH-186.190.215.251-0173-158",
+      "server": "186.190.215.251",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.81-0421-159",
+      "server": "202.50.253.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇯🇵JP-149.22.87.241-0180-160",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇨🇭CH-23.166.88.127-0161-161",
+      "server": "23.166.88.127",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇯🇵JP-149.22.87.204-0178-162",
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇯🇵JP-149.22.87.240-0179-163",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇦🇹AT-152.53.1.57-0266-164",
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇪🇸ES-79.127.139.242-0184-165",
+      "server": "79.127.139.242",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-54.36.174.134-0258-166",
+      "server": "54.36.174.134",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6heexyz"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-54.36.174.140-0233-167",
+      "server": "54.36.174.140",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6heexyz"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇫🇷FR-54.36.174.140-0229-168",
+      "server": "pl140.vpnbook.com",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6heexyz"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇨🇭CH-208.69.78.33-0523-169",
+      "server": "208.69.78.33",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.yourultimateprofessionalcareerhub.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇺🇸US-84.20.27.183-0117-170",
+      "server": "84.20.27.183",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.18-0162-171",
+      "server": "202.50.253.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.99-0150-172",
+      "server": "202.50.253.99",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.36-0136-173",
+      "server": "202.50.253.36",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.45-0222-174",
+      "server": "202.50.253.45",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.90-0103-175",
+      "server": "202.50.253.90",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.72-0137-176",
+      "server": "202.50.253.72",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇮🇹IT-202.50.253.63-0196-177",
+      "server": "202.50.253.63",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇧🇷BR-216.238.104.154-0176-178",
+      "server": "216.238.104.154",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇯🇵JP-84.247.155.196-0246-179",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇯🇵JP-84.247.155.196-0242-180",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇦🇺AU-45.63.30.142-0221-181",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇸🇬SG-15.235.164.133-0208-182",
+      "server": "15.235.164.133",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇸🇬SG-51.79.228.131-0204-183",
+      "server": "51.79.228.131",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇸🇬SG-68.183.227.4-0181-184",
+      "server": "68.183.227.4",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇸🇬SG-149.28.130.108-0138-185",
+      "server": "149.28.130.108",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchcreativejobsandshowcaseyourartistictalents.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇸🇬SG-149.88.106.74-0163-186",
+      "server": "149.88.106.74",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇸🇬SG-15.235.182.183-0201-187",
+      "server": "15.235.182.183",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇸🇬SG-149.88.107.74-0147-188",
+      "server": "149.88.107.74",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇸🇬SG-149.88.107.47-0165-189",
+      "server": "149.88.107.47",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 🇫🇷FR-54.37.131.126-0244-190",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇹🇭TH-38.60.233.126-0227-191",
+      "server": "th001.zestapp778.com",
+      "server_port": 33079,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "th001.zestapp778.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 🇵🇭PH-130.94.51.219-0235-192",
+      "server": "ph001.zestapp778.com",
+      "server_port": 46298,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "ph001.zestapp778.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇿🇦ZA-102.133.165.160-0218-193",
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🌐 🇿🇦ZA-102.37.156.224-0215-194",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 🇳🇱 荷兰 | NLD 5-195",
+      "server": "198.202.24.27",
+      "server_port": 443,
+      "uuid": "64c5f924-1c24-44a5-acff-2e3ebcd2f807",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl29.dr-ping.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 🏳[www.v2nodes.com] vless- #2-196",
+      "server": "104.21.94.161",
+      "server_port": 443,
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": null
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 🇯🇵[www.v2nodes.com] vless-JP-1... #7-197",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "fc60147e-76b8-4bc5-b691-90b2da79e3d2",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": null
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "nautica-cff.kloningstrife002.workers.dev",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 🇩🇪[www.v2nodes.com] vless-DE-1... #4-198",
+      "server": "188.114.97.62",
+      "server_port": 443,
+      "uuid": "b15f187e-9b34-437c-8243-8651a8ada76c"
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 🏳[www.v2nodes.com] vless- #26-199",
+      "server": "news.zoom.us",
+      "server_port": 2087,
+      "uuid": "0ef68b97-f878-4cea-b756-c56ea3632851",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": null
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "free.vkehi.store",
+        "insecure": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "global",
+        "outbound": "proxy"
+      },
+      {
+        "geoip": [
+          "cn",
+          "private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geosite": "cn",
+        "outbound": "direct"
+      }
+    ],
+    "final": "proxy"
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "secret": ""
+    }
+  }
+}
